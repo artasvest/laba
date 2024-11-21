@@ -26,7 +26,7 @@ def join_words(words, separator=' '):
     result = ''
     for i in range(len(words)):
         result += words[i]
-        if i < len(words) - 1:
+        if i < (len(words)-1):
             result += separator
     return result
 
@@ -58,4 +58,4 @@ def filter_words(text):
 
 text = str(input("Введите текст на латинице: "))
 result = filter_words(text)
-print(result)  
+print("Текст со всеми словами, отличынми от последнего: ",result)

@@ -6,19 +6,16 @@ def int_input():
         except ValueError:
             print("Ошибка: длина списка должна быть целым числом")
 
-
 import random
 
 n = int_input()
 min_value = -100
 max_value = 100
 
-
-
 minus1 = 0
 minus2= 0
-summamin = 0
 
+summamin = 0
 summanech = 0
 
 spisok = [random.randint(min_value,max_value) for _ in range(n)]
@@ -39,11 +36,7 @@ for i in range(len(spisok)):
     if i%2!=0:
         summanech += spisok[i]
 
-
-
-
 print("Сам список: ",spisok)
-
 print("Сумма элементов списка с нечетными номерами равна: ",summanech)
 print("Сумма элементов списка, расположенных между первым и последним отрицательными элементами равна: ",summamin)
 
