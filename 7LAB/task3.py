@@ -1,12 +1,13 @@
 while True:
-    stroka = input("Введите строку: ").strip()
+    strokainput = input("Введите строку: ").strip()
+    stroka = strokainput
     stroka = stroka.replace(" ", "")
     if not stroka.isalpha():
         print("Строка должна содержать только буквы. Введите её ещё раз.")
     else:
         break
     
-print("\nИсходная строка: ", stroka)
+print("\nИсходная строка: ", strokainput)
 
 lettersin = {}
 for letter in stroka:
